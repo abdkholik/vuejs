@@ -1,0 +1,23 @@
+<html>
+    <head><title>nilai mahasiswa</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+            <div id="app">
+                    <div v-if='nilai >85 && nilai == 100'>A</div>
+                    <div v-else-if='nilai >71 && nilai == 84'>B</div>
+                    <div v-else-if='nilai >51&& nilai == 70'>C</div>
+                    <div v-else-if='nilai >41 && nilai == 50'>D</div>
+                    <div v-else-if='nilai >0 && nilai == 40'>E</div>
+                    <div v-else>maaf input yang anda masukan salah</div>
+                </div>
+    </body>
+    <script>
+        var app =new Vue({
+            el:'#app',
+            data:{
+                nilai:90
+            }
+        })
+    </script>
+    </html>

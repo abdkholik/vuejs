@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>computed</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div id ="app">
+            <div>change Text</div>
+            <div>
+                <input type="text"placeholder="input text" v-model="text"/>
+            </div>
+            <div>
+                {{showText}}
+            </div>
+
+        </div>
+        <script>
+        var app= new Vue({
+            el:"#app",
+            data:{
+                text: ''
+            },
+            computed: {
+                showText() {
+                    return this.text.toUpperCase()
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

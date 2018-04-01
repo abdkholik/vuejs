@@ -1,0 +1,21 @@
+<html>
+    <head><title>if else</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>  
+    </head>
+    <body>
+        <div id="app">
+            <div v-if='gaji > 3000000'>di atas umr</div>
+            <div v-else-if='gaji ==3000000 || gaji>=500000'>di bawah umr</div>
+            <div v-else>tidak punya gaji</div>
+        </div>
+    </body>
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data:{
+            gaji:5000
+        }
+    })
+    </script>
+    
+</html>
